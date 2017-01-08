@@ -1,0 +1,8 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\SDI_Find_Errors_Conditionals\bin\Debug\SDI_Find_Errors_Conditionals.exe.config
+\\vmware-host\Shared Folders\Desktop\Desktop\Class Material\SDI_C#_Assignments\4_FindErrorsCond\SDI_Find_Errors_Conditionals\bin\Debug\SDI_Find_Errors_Conditionals.exe.config
+\\vmware-host\Shared Folders\Desktop\SDI_Find_Errors_Conditionals\bin\Debug\SDI_Find_Errors_Conditionals.exe.config
+\\vmware-host\Shared Folders\Desktop\SDI_Find_Errors_Conditionals\obj\Debug\SDI_Find_Errors_Conditionals.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\SDI_Find_Errors_Conditionals\bin\Debug\SDI_Find_Errors_Conditionals.exe
+\\vmware-host\Shared Folders\Desktop\SDI_Find_Errors_Conditionals\bin\Debug\SDI_Find_Errors_Conditionals.pdb
+\\vmware-host\Shared Folders\Desktop\SDI_Find_Errors_Conditionals\obj\Debug\SDI_Find_Errors_Conditionals.exe
+\\vmware-host\Shared Folders\Desktop\SDI_Find_Errors_Conditionals\obj\Debug\SDI_Find_Errors_Conditionals.pdb

@@ -1,0 +1,6 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Arrays\Angram_Douglas_Arrays\bin\Debug\Angram_Douglas_Arrays.exe.config
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Arrays\Angram_Douglas_Arrays\obj\Debug\Angram_Douglas_Arrays.csprojResolveAssemblyReference.cache
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Arrays\Angram_Douglas_Arrays\bin\Debug\Angram_Douglas_Arrays.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Arrays\Angram_Douglas_Arrays\bin\Debug\Angram_Douglas_Arrays.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Arrays\Angram_Douglas_Arrays\obj\Debug\Angram_Douglas_Arrays.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Arrays\Angram_Douglas_Arrays\obj\Debug\Angram_Douglas_Arrays.pdb

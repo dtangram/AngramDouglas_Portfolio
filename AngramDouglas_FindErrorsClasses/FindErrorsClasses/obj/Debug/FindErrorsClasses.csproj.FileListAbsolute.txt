@@ -1,0 +1,11 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsClasses\bin\Debug\FindErrorsClasses.exe.config
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsClasses\bin\Debug\FindErrorsClasses.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsClasses\bin\Debug\FindErrorsClasses.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsClasses\obj\Debug\FindErrorsClasses.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsClasses\obj\Debug\FindErrorsClasses.pdb
+\\vmware-host\Shared Folders\Desktop\FindErrorsClasses\bin\Debug\FindErrorsClasses.exe.config
+\\vmware-host\Shared Folders\Desktop\FindErrorsClasses\obj\Debug\FindErrorsClasses.exe
+\\vmware-host\Shared Folders\Desktop\FindErrorsClasses\obj\Debug\FindErrorsClasses.pdb
+\\vmware-host\Shared Folders\Desktop\FindErrorsClasses\bin\Debug\FindErrorsClasses.exe
+\\vmware-host\Shared Folders\Desktop\FindErrorsClasses\bin\Debug\FindErrorsClasses.pdb
+\\vmware-host\Shared Folders\Desktop\FindErrorsClasses\obj\Debug\FindErrorsClasses.csprojResolveAssemblyReference.cache

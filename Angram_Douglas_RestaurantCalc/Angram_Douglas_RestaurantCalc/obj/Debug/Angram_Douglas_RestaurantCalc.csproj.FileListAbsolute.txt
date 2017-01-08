@@ -1,0 +1,6 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_RestaurantCalc\Angram_Douglas_RestaurantCalc\bin\Debug\Angram_Douglas_RestaurantCalc.exe.config
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_RestaurantCalc\Angram_Douglas_RestaurantCalc\bin\Debug\Angram_Douglas_RestaurantCalc.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_RestaurantCalc\Angram_Douglas_RestaurantCalc\bin\Debug\Angram_Douglas_RestaurantCalc.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_RestaurantCalc\Angram_Douglas_RestaurantCalc\obj\Debug\Angram_Douglas_RestaurantCalc.csprojResolveAssemblyReference.cache
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_RestaurantCalc\Angram_Douglas_RestaurantCalc\obj\Debug\Angram_Douglas_RestaurantCalc.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_RestaurantCalc\Angram_Douglas_RestaurantCalc\obj\Debug\Angram_Douglas_RestaurantCalc.pdb

@@ -1,0 +1,6 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_ArrayLists\Angram_Douglas_ArrayLists\bin\Debug\Angram_Douglas_ArrayLists.exe.config
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_ArrayLists\Angram_Douglas_ArrayLists\bin\Debug\Angram_Douglas_ArrayLists.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_ArrayLists\Angram_Douglas_ArrayLists\bin\Debug\Angram_Douglas_ArrayLists.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_ArrayLists\Angram_Douglas_ArrayLists\obj\Debug\Angram_Douglas_ArrayLists.csprojResolveAssemblyReference.cache
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_ArrayLists\Angram_Douglas_ArrayLists\obj\Debug\Angram_Douglas_ArrayLists.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_ArrayLists\Angram_Douglas_ArrayLists\obj\Debug\Angram_Douglas_ArrayLists.pdb

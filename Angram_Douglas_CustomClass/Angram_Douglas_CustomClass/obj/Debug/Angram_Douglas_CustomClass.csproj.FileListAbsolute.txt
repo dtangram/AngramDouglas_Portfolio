@@ -1,0 +1,6 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_CustomClass\Angram_Douglas_CustomClass\bin\Debug\Angram_Douglas_CustomClass.exe.config
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_CustomClass\Angram_Douglas_CustomClass\bin\Debug\Angram_Douglas_CustomClass.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_CustomClass\Angram_Douglas_CustomClass\bin\Debug\Angram_Douglas_CustomClass.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_CustomClass\Angram_Douglas_CustomClass\obj\Debug\Angram_Douglas_CustomClass.csprojResolveAssemblyReference.cache
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_CustomClass\Angram_Douglas_CustomClass\obj\Debug\Angram_Douglas_CustomClass.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_CustomClass\Angram_Douglas_CustomClass\obj\Debug\Angram_Douglas_CustomClass.pdb

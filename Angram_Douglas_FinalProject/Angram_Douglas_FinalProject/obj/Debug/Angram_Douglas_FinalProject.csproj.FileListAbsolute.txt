@@ -1,0 +1,6 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_FinalProject\Angram_Douglas_FinalProject\bin\Debug\Angram_Douglas_FinalProject.exe.config
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_FinalProject\Angram_Douglas_FinalProject\bin\Debug\Angram_Douglas_FinalProject.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_FinalProject\Angram_Douglas_FinalProject\bin\Debug\Angram_Douglas_FinalProject.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_FinalProject\Angram_Douglas_FinalProject\obj\Debug\Angram_Douglas_FinalProject.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_FinalProject\Angram_Douglas_FinalProject\obj\Debug\Angram_Douglas_FinalProject.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_FinalProject\Angram_Douglas_FinalProject\obj\Debug\Angram_Douglas_FinalProject.csprojResolveAssemblyReference.cache

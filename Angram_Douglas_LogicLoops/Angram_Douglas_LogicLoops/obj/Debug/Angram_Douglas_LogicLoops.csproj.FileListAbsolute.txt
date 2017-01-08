@@ -1,0 +1,6 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\bin\Debug\Angram_Douglas_LogicLoops.exe.config
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\bin\Debug\Angram_Douglas_LogicLoops.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\bin\Debug\Angram_Douglas_LogicLoops.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\obj\Debug\Angram_Douglas_LogicLoops.csprojResolveAssemblyReference.cache
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\obj\Debug\Angram_Douglas_LogicLoops.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\obj\Debug\Angram_Douglas_LogicLoops.pdb

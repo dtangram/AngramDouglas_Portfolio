@@ -1,0 +1,12 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsFunctions\bin\Debug\FindErrorsFunctions.exe.config
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsFunctions\bin\Debug\FindErrorsFunctions.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsFunctions\bin\Debug\FindErrorsFunctions.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsFunctions\obj\Debug\FindErrorsFunctions.csprojResolveAssemblyReference.cache
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsFunctions\obj\Debug\FindErrorsFunctions.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\FindErrorsFunctions\obj\Debug\FindErrorsFunctions.pdb
+\\vmware-host\Shared Folders\Desktop\FindErrorsFunctions\bin\Debug\FindErrorsFunctions.exe.config
+\\vmware-host\Shared Folders\Desktop\FindErrorsFunctions\obj\Debug\FindErrorsFunctions.exe
+\\vmware-host\Shared Folders\Desktop\FindErrorsFunctions\obj\Debug\FindErrorsFunctions.pdb
+\\vmware-host\Shared Folders\Desktop\FindErrorsFunctions\bin\Debug\FindErrorsFunctions.exe
+\\vmware-host\Shared Folders\Desktop\FindErrorsFunctions\bin\Debug\FindErrorsFunctions.pdb
+\\vmware-host\Shared Folders\Desktop\FindErrorsFunctions\obj\Debug\FindErrorsFunctions.csprojResolveAssemblyReference.cache
