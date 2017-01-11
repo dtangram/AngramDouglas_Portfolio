@@ -1,0 +1,6 @@
+C:\Users\DThor\Desktop\repos\AngramDouglas_Portfolio\MainMenu\MainMenu\bin\Debug\MainMenu.exe.config
+C:\Users\DThor\Desktop\repos\AngramDouglas_Portfolio\MainMenu\MainMenu\bin\Debug\MainMenu.exe
+C:\Users\DThor\Desktop\repos\AngramDouglas_Portfolio\MainMenu\MainMenu\bin\Debug\MainMenu.pdb
+C:\Users\DThor\Desktop\repos\AngramDouglas_Portfolio\MainMenu\MainMenu\obj\Debug\MainMenu.csprojResolveAssemblyReference.cache
+C:\Users\DThor\Desktop\repos\AngramDouglas_Portfolio\MainMenu\MainMenu\obj\Debug\MainMenu.exe
+C:\Users\DThor\Desktop\repos\AngramDouglas_Portfolio\MainMenu\MainMenu\obj\Debug\MainMenu.pdb
