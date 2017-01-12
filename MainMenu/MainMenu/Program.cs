@@ -19,46 +19,62 @@ namespace MainMenu
             //Display the menu and prompt the user to enter the menu item they want to use.
             Console.WriteLine("Please choose the menu item you need by typing it and pressing enter.\r\n1. SwapName  2. Backwards  3.AgeConvert  4. TempConvert");
 
-            //Allow the user to enter a value.
-            string inputSwapName = Console.ReadLine();
+            // Change to your number of menuitems.
+            const int menuItems = 3;
+            int selector = 0;
+            bool items = false;
 
-            //Validate user input.
-            string swapNameInput = validateString(inputSwapName);
-
-            //Write a condition that will display SwapName.
-            if (swapNameInput == SwapNameString)
+            while (selector != menuItems)
             {
-                //Allow the user to enter their first name.
-                string inputFirstName = Console.ReadLine();
+                items = int.TryParse(Console.ReadLine(), out selector);
+                if (items)
+                {
+                    switch (selector)
+                    {
+                        case 1:
+                            Console.WriteLine("\r\nEnter your first name.");
 
-                //Allow the user to enter their last name.
-                string inputLastName = Console.ReadLine();
+                            //Allow the user to enter their first name.
+                            string inputFirstName = Console.ReadLine();
 
-                //Invoke the method SwapName.
-                SwapName(inputFirstName, inputLastName);                
+                            string firstInput = validateString(inputFirstName);
+
+                            Console.WriteLine("\r\nEnter your last name.");
+
+                            //Allow the user to enter their last name.
+                            string inputLastName = Console.ReadLine();
+
+                            string lastInput = validateString(inputLastName);
+
+                            SwapName(firstInput, lastInput);
+
+                            break;
+
+                        case 2:
+                            Console.WriteLine("\r\nEnter a sentence using only 6 words.");
+
+                            string inputSentence = Console.ReadLine();
+
+                            string sentenceInput = validateString(inputSentence);
+
+                            Backwards(sentenceInput);
+
+                            break;
+                    }
+                }
             }
         }
+
+        
 
         //Create a validate method to hold SwapName validations.
         public static string validateString(string validateInput)
         {
-            //Create String variables.
-            string SwapName = "SwapName";
-
             //Check to see if the user left the iput blank.
             while (string.IsNullOrWhiteSpace(validateInput))
             {
                 //Tell the user to not leave blank and to enter a number.
                 Console.WriteLine("\r\nDo not leave blank.\r\nPlease type a number then press enter.");
-
-                //Allow the user to type their response.
-                validateInput = Console.ReadLine();
-            }
-
-            //Check to see if the user entered anything other than a menu item.
-            while (validateInput != SwapName)
-            {
-                Console.WriteLine("\r\nPlease choose from the menu items listed.");
 
                 //Allow the user to type their response.
                 validateInput = Console.ReadLine();
@@ -71,11 +87,6 @@ namespace MainMenu
         //Create a validate method to hold the validations for numbers.
         public static double validate(string validateInput)
         {
-            //Create String variables.
-            string Backwards = "Backwards";
-            string AgeConvert = "AgeConvert";
-            string TempConvert = "TempConvert";
-
             //Declare a variable to hold the converted value.
             double validInput;
 
@@ -94,15 +105,6 @@ namespace MainMenu
             {
                 //Tell the user to type enter a number.
                 Console.WriteLine("\r\nYou have typed something other than a number.\r\nPlease type a number then press enter.");
-
-                //Allow the user to type their response.
-                validateInput = Console.ReadLine();
-            }
-
-            //Check to see if the user entered anything other than a number.
-            while (validateInput != Backwards || validateInput != AgeConvert || validateInput != TempConvert)
-            {
-                Console.WriteLine("\r\nPlease choose from the menu items listed.");
 
                 //Allow the user to type their response.
                 validateInput = Console.ReadLine();
@@ -136,6 +138,25 @@ namespace MainMenu
 
             //Return the variable nameFirst.
             return nameFirst;
+        }
+
+        //Create a validate method to hold SwapName validations.
+        public static string Backwards(string sentence)
+        {
+            sentence = "";
+            string revSentence = "";
+
+            //Allow the user to type their response.
+            sentence = Console.ReadLine();
+
+            for (int i = sentence.Length - 1; i >= 0; i--)
+            {
+                revSentence += sentence[i];
+            }
+
+            Console.Write(revSentence);
+
+            return sentence;
         }
     }
 }
