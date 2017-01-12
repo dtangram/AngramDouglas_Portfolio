@@ -17,55 +17,75 @@ namespace MainMenu
             string TempConvertString = "TempConvert";
 
             //Display the menu and prompt the user to enter the menu item they want to use.
-            Console.WriteLine("Please choose the menu item you need by typing it and pressing enter.\r\n1. SwapName  2. Backwards  3.AgeConvert  4. TempConvert");
+            Console.WriteLine("Please choose the menu item you need by typing the number of the of the item you want and pressing enter.\r\n1. SwapName  2. Backwards  3.AgeConvert  4. TempConvert");
 
-            // Change to your number of menuitems.
-            const int menuItems = 3;
-            int selector = 0;
+            //Assign int variable to 4.
+            const int menuItems = 4;
+
+            //Assign int variable to 0.
+            int selectItem = 0;
+
+            //Assign the boolean variable to false.
             bool items = false;
 
-            while (selector != menuItems)
+            //Create a while loop to loop through the menu items.
+            while (selectItem != menuItems)
             {
-                items = int.TryParse(Console.ReadLine(), out selector);
+                //Convert the boolean to an int and assign it to selectItem.
+                items = int.TryParse(Console.ReadLine(), out selectItem);
+
+                //Create an if statement to check if an item is true or false.
                 if (items)
                 {
-                    switch (selector)
+                    //Create a switch to check if an item is true or false.
+                    switch (selectItem)
                     {
+                        //Create case to store the code for the menu item.
                         case 1:
+
+                            //Prompt the user to type their first name.
                             Console.WriteLine("\r\nEnter your first name.");
 
                             //Allow the user to enter their first name.
                             string inputFirstName = Console.ReadLine();
 
+                            //Validate the user input.
                             string firstInput = validateString(inputFirstName);
 
+                            //Prompt the user to type their first name.
                             Console.WriteLine("\r\nEnter your last name.");
 
                             //Allow the user to enter their last name.
                             string inputLastName = Console.ReadLine();
 
+                            //Validate the user input.
                             string lastInput = validateString(inputLastName);
 
+                            //Invoke the method and pass in the arguments.
                             SwapName(firstInput, lastInput);
 
+                            //Break out of the case when complete.
                             break;
 
                         case 2:
+                            //Create case to store the code for the menu item.
                             Console.WriteLine("\r\nEnter a sentence using only 6 words.");
 
+                            //Prompt the user to type a sentence.
                             string inputSentence = Console.ReadLine();
 
+                            //Validate the user input.
                             string sentenceInput = validateString(inputSentence);
 
-                            Backwards(sentenceInput);
+                            //Invoke the method and pass in the arguments.
+                                Backwards(sentenceInput);
 
+                            //Break out of the case when complete.
                             break;
                     }
                 }
             }
-        }
-
-        
+        }        
 
         //Create a validate method to hold SwapName validations.
         public static string validateString(string validateInput)
@@ -143,19 +163,26 @@ namespace MainMenu
         //Create a validate method to hold SwapName validations.
         public static string Backwards(string sentence)
         {
+            //Assign the variable to a string literal.
             sentence = "";
+
+            //Assign the variable to a string literal.
             string revSentence = "";
 
             //Allow the user to type their response.
             sentence = Console.ReadLine();
 
+            //Create a for loop to reverse user input.
             for (int i = sentence.Length - 1; i >= 0; i--)
             {
+                //Increment both string literals.
                 revSentence += sentence[i];
             }
 
+            //Display the reversed sentence.
             Console.Write(revSentence);
 
+            //Return the string variable sentence.
             return sentence;
         }
     }
