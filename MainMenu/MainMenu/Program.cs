@@ -10,7 +10,7 @@ namespace MainMenu
     {
         static void Main(string[] args)
         {
-            //Create String variables for "F" and "C".
+            //Create String variables.
             string SwapNameString = "SwapName";
             string BackwardsString = "Backwards";
             string AgeConvertString = "AgeConvert";
@@ -28,12 +28,13 @@ namespace MainMenu
             //Write a condition that will display SwapName.
             if (swapNameInput == SwapNameString)
             {
-                //Allow the user to enter a value.
+                //Allow the user to enter their first name.
                 string inputFirstName = Console.ReadLine();
 
-                //Allow the user to enter a value.
+                //Allow the user to enter their last name.
                 string inputLastName = Console.ReadLine();
 
+                //Invoke the method SwapName.
                 SwapName(inputFirstName, inputLastName);                
             }
         }
@@ -54,7 +55,7 @@ namespace MainMenu
                 validateInput = Console.ReadLine();
             }
 
-            //Check to see if the user entered anything other than a number.
+            //Check to see if the user entered anything other than a menu item.
             while (validateInput != SwapName)
             {
                 Console.WriteLine("\r\nPlease choose from the menu items listed.");
@@ -110,26 +111,30 @@ namespace MainMenu
             //Return the variable validInput.
             return validInput;
         }
-
-
-
+        
         //Create a validate method to hold SwapName validations.
         public static string SwapName(string nameFirst, string nameLast)
         {
-            //Display the original string with the original separator.
+            //Display the original string.
             Console.WriteLine("\r\nYour name is " + nameFirst + " " + nameLast + ".");
 
+            //Swap the valuse of the variables nameFirst and nameLast.
+            //Increment nameFirst with nameLast.
             nameFirst += nameLast;
+
+            //Use dot notation to invoke the Remove method to namefirst then pass in an argument of nameFirst with the IndexOf method which contains the argument nameLast.
             nameLast = nameFirst.Remove(nameFirst.IndexOf(nameLast));
+
+            //Use dot notation to invoke the Substring method to namefirst then pass in an argument of nameLast with the Length method.
             nameFirst = nameFirst.Substring(nameLast.Length);
 
-            //Display the original string with the original separator.
+            //Display nameFirst swapped.
             Console.WriteLine("\r\nYour first name has been swapped with " + nameFirst + ".");
 
-            //Display the original string with the original separator.
+            //Display  nameLast swapped.
             Console.WriteLine("\r\nYour last name has been swapped with " + nameLast + ".");
 
-            //Return the variable wallWidth.
+            //Return the variable nameFirst.
             return nameFirst;
         }
     }
