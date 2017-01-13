@@ -17,7 +17,7 @@ namespace MainMenu
             string TempConvertString = "TempConvert";
 
             //Display the menu and prompt the user to enter the menu item they want to use.
-            Console.WriteLine("Please choose the menu item you need by typing the number of the of the item you want and pressing enter.\r\n1. SwapName  2. Backwards  3.AgeConvert  4. TempConvert");
+            Console.WriteLine("Typing the number of the of the menu item you want and pressing enter.\r\n1. SwapName  2. Backwards  3.AgeConvert  4. TempConvert\r\n");
 
             //Assign int variable to 4.
             const int menuItems = 4;
@@ -154,7 +154,7 @@ namespace MainMenu
             Console.WriteLine("\r\nYour first name has been swapped with " + nameFirst + ".");
 
             //Display  nameLast swapped.
-            Console.WriteLine("\r\nYour last name has been swapped with " + nameLast + ".");
+            Console.WriteLine("\r\nYour last name has been swapped with " + nameLast + ".\r\n");
 
             //Return the variable nameFirst.
             return nameFirst;
@@ -180,7 +180,7 @@ namespace MainMenu
             }
 
             //Display the reversed sentence.
-            Console.Write(revSentence);
+            Console.Write(revSentence + "\r\n");
 
             //Return the string variable sentence.
             return sentence;
