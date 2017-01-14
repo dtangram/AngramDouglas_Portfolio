@@ -67,25 +67,46 @@ namespace MainMenu
                             //Break out of the case when complete.
                             break;
 
+                        //Create case to store the code for the menu item.
                         case 2:
-                            //Create case to store the code for the menu item.
+                            //Prompt the user to type a sentence.
                             Console.WriteLine("\r\nEnter a sentence using only 6 words.");
 
+                            //Invoke the method and pass in the arguments.
+                            Backwards();
+
+                            //Break out of the case when complete.
+                            break;
+
+                        //Create case to store the code for the menu item.
+                        case 3:
+                            //Prompt the user to type their name.
+                            Console.WriteLine("\r\nType your name then press enter.");
+
                             //Prompt the user to type a sentence.
-                            string inputSentence = Console.ReadLine();
+                            string inputName = Console.ReadLine();
 
                             //Validate the user input.
-                            string sentenceInput = validateString(inputSentence);
+                            string nameInput = validateString(inputName);
+
+                            //Prompt the user to type their name.
+                            Console.WriteLine("\r\nType your age then press enter.");
+
+                            //Prompt the user to type a sentence.
+                            string inputAge = Console.ReadLine();
+
+                            //Validate the user input.
+                            decimal ageInput = validate(inputAge);
 
                             //Invoke the method and pass in the arguments.
-                                Backwards(sentenceInput);
+                            AgeConvert(ageInput);
 
                             //Break out of the case when complete.
                             break;
                     }
                 }
             }
-        }        
+        }
 
         //Create a validate method to hold SwapName validations.
         public static string validateString(string validateInput)
@@ -94,7 +115,7 @@ namespace MainMenu
             while (string.IsNullOrWhiteSpace(validateInput))
             {
                 //Tell the user to not leave blank and to enter a number.
-                Console.WriteLine("\r\nDo not leave blank.\r\nPlease type a number then press enter.");
+                Console.WriteLine("\r\nPlease do not leave blank.");
 
                 //Allow the user to type their response.
                 validateInput = Console.ReadLine();
@@ -105,10 +126,10 @@ namespace MainMenu
         }
 
         //Create a validate method to hold the validations for numbers.
-        public static double validate(string validateInput)
+        public static decimal validate(string validateInput)
         {
             //Declare a variable to hold the converted value.
-            double validInput;
+            decimal validInput;
 
             //Check to see if the user left the iput blank.
             while (string.IsNullOrWhiteSpace(validateInput))
@@ -121,7 +142,7 @@ namespace MainMenu
             }
 
             //Check to see if the user entered anything other than a number.
-            while (!double.TryParse(validateInput, out validInput))
+            while (!decimal.TryParse(validateInput, out validInput))
             {
                 //Tell the user to type enter a number.
                 Console.WriteLine("\r\nYou have typed something other than a number.\r\nPlease type a number then press enter.");
@@ -133,8 +154,8 @@ namespace MainMenu
             //Return the variable validInput.
             return validInput;
         }
-        
-        //Create a validate method to hold SwapName validations.
+
+        //Create SwapName method.
         public static string SwapName(string nameFirst, string nameLast)
         {
             //Display the original string.
@@ -160,17 +181,37 @@ namespace MainMenu
             return nameFirst;
         }
 
-        //Create a validate method to hold SwapName validations.
-        public static string Backwards(string sentence)
+        //Create Backwards method.
+        public static void Backwards()
         {
             //Assign the variable to a string literal.
-            sentence = "";
+            string sentence = "";
 
             //Assign the variable to a string literal.
             string revSentence = "";
 
             //Allow the user to type their response.
             sentence = Console.ReadLine();
+
+            //Create if statement to check if there are more than six words in the sentence.
+            while (string.IsNullOrWhiteSpace(sentence) || sentence.IndexOf(" ") <= 4 )
+            {
+                //Prompt the user to type their name.
+                Console.WriteLine("\r\nYou have entered less than 6 words.\r\nPlease increase your words.");
+
+                //Allow the user to type their response.
+                sentence = Console.ReadLine();
+            }
+
+            //Create if statement to check if there are more than six words in the sentence.
+            while (sentence.IndexOf(" ") >= 6)
+            {
+                //Prompt the user to type their name.
+                Console.WriteLine("\r\nYou have entered more than 6 words.\r\nPlease decrease your words.");
+
+                //Allow the user to type their response.
+                sentence = Console.ReadLine();
+            }
 
             //Create a for loop to reverse user input.
             for (int i = sentence.Length - 1; i >= 0; i--)
@@ -181,9 +222,12 @@ namespace MainMenu
 
             //Display the reversed sentence.
             Console.Write(revSentence + "\r\n");
+        }
 
-            //Return the string variable sentence.
-            return sentence;
+        //Create AgeConvert method.
+        public static decimal AgeConvert(decimal age)
+        {
+            return age;
         }
     }
 }
