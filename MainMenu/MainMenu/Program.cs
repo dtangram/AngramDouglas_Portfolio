@@ -99,7 +99,7 @@ namespace MainMenu
                             decimal ageInput = validate(inputAge);
 
                             //Invoke the method and pass in the arguments.
-                            AgeConvert(ageInput);
+                            AgeConvert(nameInput, ageInput);
 
                             //Break out of the case when complete.
                             break;
@@ -225,7 +225,7 @@ namespace MainMenu
         }
 
         //Create AgeConvert method.
-        public static decimal AgeConvert(decimal age)
+        public static decimal AgeConvert(string name, decimal age)
         {
             decimal numDays;
             decimal numHours;
@@ -275,7 +275,7 @@ namespace MainMenu
 				numLeapString = " ";
 			}
 
-			Console.WriteLine("\r\nYou were born {0}{1}and you have lived {2} {3}, \r\n{4} days, {5} hours, {6} minutes and {7} seconds.", yearBorn, numLeapString, age, addS, numDays, numHours, numMinutes, numSeconds);
+			Console.WriteLine("\r\n{0}, you were born {1}{2}and you have lived {3} {4}, \r\n{5} days, {6} hours, {7} minutes and {8} seconds.", name, yearBorn, numLeapString, age, addS, numDays, numHours, numMinutes, numSeconds);
 			Console.WriteLine("\r\nIncluding {0} leap {1}, you've lived {2} days, {3} hours,\r\n{4} minutes and {5} seconds.\r\n", newNumLeap, addS, numDaysLeap, numHoursLeap, numMinutesLeap, numSecondsLeap);
 
 			return age;
