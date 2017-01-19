@@ -231,27 +231,54 @@ namespace MainMenu
             decimal numHours;
             decimal numMinutes;
             decimal numSeconds;
+			decimal yearBorn;
+			DateTime dt = DateTime.Now;
+			decimal numLeapYear;
+			decimal newNumLeap;
+			decimal numDaysLeap;
+			decimal numHoursLeap;
+			decimal numMinutesLeap;
+			decimal numSecondsLeap;
 
-            numDays = age * 365;
+			yearBorn = dt.Year - age;
+			numDays = age * 365;
             numHours = age * 365 * 24;
             numMinutes = age * 365 * 24 * 60;
-            numSeconds = age * 365 * 24 * 60 *60;
+            numSeconds = age * 365 * 24 * 60 * 60;
+			numLeapYear = (age + 1) / 4;
+			newNumLeap = Math.Ceiling(numLeapYear);
+			numDaysLeap = numDays + newNumLeap;
+			numHoursLeap = numHours + (newNumLeap * 24);
+			numMinutesLeap = numMinutes + (newNumLeap * 24 * 60);
+			numSecondsLeap = numSeconds + (newNumLeap * 24 * 60 * 60);
 
-            string addS;
-
-            if (age == 1)
+			string addS;
+			string numLeapString;
+			
+			if (age == 1)
             {
                 addS = "year";
             }
 
-            else
-            {
-                addS = "years";
-            }
+			else
+			{
+				addS = "years";
+			}
 
-            Console.WriteLine("\r\nYou have lived {0} {1}, {2} days, {3} hours, {4} minutes and {5} seconds.", age, addS, numDays, numHours, numMinutes, numSeconds);
+			if ((yearBorn % 4 == 0 && yearBorn % 100 != 0) || (yearBorn % 400 == 0))
+			{
+				numLeapString = ", which was a leap year, ";
+			}
 
-            return age;
+			else
+			{
+				numLeapString = " ";
+			}
+
+			Console.WriteLine("\r\nYou were born {0}{1}and you have lived {2} {3}, \r\n{4} days, {5} hours, {6} minutes and {7} seconds.", yearBorn, numLeapString, age, addS, numDays, numHours, numMinutes, numSeconds);
+			Console.WriteLine("\r\nIncluding {0} leap {1}, you've lived {2} days, {3} hours,\r\n{4} minutes and {5} seconds.\r\n", newNumLeap, addS, numDaysLeap, numHoursLeap, numMinutesLeap, numSecondsLeap);
+
+			return age;
         }
     }
 }
