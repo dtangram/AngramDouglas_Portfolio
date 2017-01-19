@@ -17,7 +17,7 @@ namespace MainMenu
             string TempConvertString = "TempConvert";
 
             //Display the menu and prompt the user to enter the menu item they want to use.
-            Console.WriteLine("Typing the number of the of the menu item you want and pressing enter.\r\n1. SwapName  2. Backwards  3.AgeConvert  4. TempConvert\r\n");
+            Console.WriteLine("Typing the number of the of the menu item you want and pressing enter.\r\n1. SwapName  2. Backwards  3. AgeConvert  4. TempConvert\r\n");
 
             //Assign int variable to 4.
             const int menuItems = 4;
@@ -115,7 +115,7 @@ namespace MainMenu
             while (string.IsNullOrWhiteSpace(validateInput))
             {
                 //Tell the user to not leave blank and to enter a number.
-                Console.WriteLine("\r\nPlease do not leave blank.");
+                Console.WriteLine("\r\nPlease do not leave blank.\r\n");
 
                 //Allow the user to type their response.
                 validateInput = Console.ReadLine();
@@ -135,7 +135,7 @@ namespace MainMenu
             while (string.IsNullOrWhiteSpace(validateInput))
             {
                 //Tell the user to not leave blank and to enter a number.
-                Console.WriteLine("\r\nDo not leave blank.\r\nPlease type a number then press enter.");
+                Console.WriteLine("\r\nDo not leave blank.\r\nPlease type a number then press enter.\r\n");
 
                 //Allow the user to type their response.
                 validateInput = Console.ReadLine();
@@ -145,7 +145,7 @@ namespace MainMenu
             while (!decimal.TryParse(validateInput, out validInput))
             {
                 //Tell the user to type enter a number.
-                Console.WriteLine("\r\nYou have typed something other than a number.\r\nPlease type a number then press enter.");
+                Console.WriteLine("\r\nYou have typed something other than a number.\r\nPlease type a number then press enter.\r\n");
 
                 //Allow the user to type their response.
                 validateInput = Console.ReadLine();
@@ -193,21 +193,21 @@ namespace MainMenu
             //Allow the user to type their response.
             sentence = Console.ReadLine();
 
-            //Create if statement to check if there are more than six words in the sentence.
-            while (string.IsNullOrWhiteSpace(sentence) || sentence.IndexOf(" ") <= 4 )
+            //Create while loop to check if nothing is entered.
+            while (string.IsNullOrWhiteSpace(sentence))
             {
-                //Prompt the user to type their name.
-                Console.WriteLine("\r\nYou have entered less than 6 words.\r\nPlease increase your words.");
+                //Inform user to not leave the input blank.
+                Console.WriteLine("\r\nPlease do not leave blank.\r\n");
 
                 //Allow the user to type their response.
                 sentence = Console.ReadLine();
             }
 
-            //Create if statement to check if there are more than six words in the sentence.
+            //Create while loop to check if there are more than six words in the sentence.
             while (sentence.IndexOf(" ") >= 6)
             {
-                //Prompt the user to type their name.
-                Console.WriteLine("\r\nYou have entered more than 6 words.\r\nPlease decrease your words.");
+                //inform the user that they typed more than 6 words.
+                Console.WriteLine("\r\nYou must have 6 words in your sentence.\r\n");
 
                 //Allow the user to type their response.
                 sentence = Console.ReadLine();
@@ -227,6 +227,30 @@ namespace MainMenu
         //Create AgeConvert method.
         public static decimal AgeConvert(decimal age)
         {
+            decimal numDays;
+            decimal numHours;
+            decimal numMinutes;
+            decimal numSeconds;
+
+            numDays = age * 365;
+            numHours = age * 365 * 24;
+            numMinutes = age * 365 * 24 * 60;
+            numSeconds = age * 365 * 24 * 60 *60;
+
+            string add;
+
+            if (age == 1)
+            {
+                add = "year";
+            }
+
+            else
+            {
+                add = "years";
+            }
+
+            Console.WriteLine("\r\nYou have lived {0} {1}, {2} days, {3} hours, {4} minutes and {5} seconds.", age, add, numDays, numHours, numMinutes, numSeconds);
+
             return age;
         }
     }
