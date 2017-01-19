@@ -237,19 +237,19 @@ namespace MainMenu
             numMinutes = age * 365 * 24 * 60;
             numSeconds = age * 365 * 24 * 60 *60;
 
-            string add;
+            string addS;
 
             if (age == 1)
             {
-                add = "year";
+                addS = "year";
             }
 
             else
             {
-                add = "years";
+                addS = "years";
             }
 
-            Console.WriteLine("\r\nYou have lived {0} {1}, {2} days, {3} hours, {4} minutes and {5} seconds.", age, add, numDays, numHours, numMinutes, numSeconds);
+            Console.WriteLine("\r\nYou have lived {0} {1}, {2} days, {3} hours, {4} minutes and {5} seconds.", age, addS, numDays, numHours, numMinutes, numSeconds);
 
             return age;
         }
