@@ -227,6 +227,7 @@ namespace MainMenu
         //Create AgeConvert method.
         public static decimal AgeConvert(string name, decimal age)
         {
+			//Create variables to hold the values of the year, day, hour, minute, second and leap year.
             decimal numDays;
             decimal numHours;
             decimal numMinutes;
@@ -240,44 +241,80 @@ namespace MainMenu
 			decimal numMinutesLeap;
 			decimal numSecondsLeap;
 
+			//Calculate the year the user was born.
 			yearBorn = dt.Year - age;
+
+			//Calculate the number of days the users has lived.
 			numDays = age * 365;
-            numHours = age * 365 * 24;
-            numMinutes = age * 365 * 24 * 60;
-            numSeconds = age * 365 * 24 * 60 * 60;
+
+			//Calculate the number of hours the users has lived.
+			numHours = age * 365 * 24;
+
+			//Calculate the number of minutes the users has lived.
+			numMinutes = age * 365 * 24 * 60;
+
+			//Calculate the number of seconds the users has lived.
+			numSeconds = age * 365 * 24 * 60 * 60;
+
+			//Calculate the number of leap years the users has lived.
 			numLeapYear = (age + 1) / 4;
+
+			//Round up the number of leap years.
 			newNumLeap = Math.Ceiling(numLeapYear);
+
+			//Calculate the number of days the users has lived including leap year.
 			numDaysLeap = numDays + newNumLeap;
+
+			//Calculate the number of hours the users has lived including leap year.
 			numHoursLeap = numHours + (newNumLeap * 24);
+
+			//Calculate the number of minutes the users has lived including leap year.
 			numMinutesLeap = numMinutes + (newNumLeap * 24 * 60);
+
+			//Calculate the number of seconds the users has lived including leap year.
 			numSecondsLeap = numSeconds + (newNumLeap * 24 * 60 * 60);
 
+			//Create a variable to hold the string for plural and singular string.
 			string addS;
+
+			//Create a variable to hold the leap year string.
 			string numLeapString;
 			
+			//Create an if statement to check if the age of the user is equal to 1.
 			if (age == 1)
             {
+				//Display the year string if the age is equal to 1.
                 addS = "year";
             }
 
+			//Create else statement if age is more than 1.
 			else
 			{
+				//Display the years string if the age is more than 1.
 				addS = "years";
 			}
 
+			//Create if statement to check if the year the user was born was a leap year.
 			if ((yearBorn % 4 == 0 && yearBorn % 100 != 0) || (yearBorn % 400 == 0))
 			{
+				//If the user was born on a leap year, display the numLeapString.
 				numLeapString = ", which was a leap year, ";
 			}
 
+			//Create else statement if the year born was not a leap year.
 			else
 			{
+				//If the user wasn't born on a leap year, display an empty string.
 				numLeapString = " ";
 			}
 
+			//Display the users name, the year born, age, days lived, hours lived, minutes lived and seconds lived.
 			Console.WriteLine("\r\n{0}, you were born {1}{2}and you have lived {3} {4}, \r\n{5} days, {6} hours, {7} minutes and {8} seconds.", name, yearBorn, numLeapString, age, addS, numDays, numHours, numMinutes, numSeconds);
-			Console.WriteLine("\r\nIncluding {0} leap {1}, you've lived {2} days, {3} hours,\r\n{4} minutes and {5} seconds.\r\n", newNumLeap, addS, numDaysLeap, numHoursLeap, numMinutesLeap, numSecondsLeap);
 
+			//Display the number of leap years the user has lived and display the new amount of days lived, hours lived, minutes lived and seconds lived.
+			Console.WriteLine("\r\nIncluding {0} leap {1}, you've lived {2} days, {3} hours,\r\n{4} minutes and {5} seconds.\r\n", newNumLeap, addS, numDaysLeap, numHoursLeap, numMinutesLeap, numSecondsLeap);
+			
+			//Return the age parameter.
 			return age;
         }
     }
