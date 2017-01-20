@@ -233,7 +233,7 @@ namespace MainMenu
             decimal numMinutes;
             decimal numSeconds;
 			decimal yearBorn;
-			DateTime dt = DateTime.Now;
+			DateTime currentYear = DateTime.Now;
 			decimal numLeapYear;
 			decimal newNumLeap;
 			decimal numDaysLeap;
@@ -242,7 +242,7 @@ namespace MainMenu
 			decimal numSecondsLeap;
 
 			//Calculate the year the user was born.
-			yearBorn = dt.Year - age;
+			yearBorn = currentYear.Year - age;
 
 			//Calculate the number of days the users has lived.
 			numDays = age * 365;
