@@ -103,6 +103,14 @@ namespace MainMenu
 
                             //Break out of the case when complete.
                             break;
+
+                        //Create case to store the code for the menu item.
+                        case 4:
+                            //Invoke the method and pass in the arguments.
+                            TempConvert();
+
+                            //Break out of the case when complete.
+                            break;
                     }
                 }
             }
@@ -316,6 +324,77 @@ namespace MainMenu
 			
 			//Return the age parameter.
 			return age;
+        }
+
+        //Create TempConvert method.
+        public static void TempConvert()
+        {
+            //Prompt the user to type in a temperature in decimal numbers only.
+            Console.WriteLine("\r\nEnter a temperature in Fahrenheit using only numbers and decimals.\r\nThen press enter.");
+
+            //Allow the user to type the temperature.
+            string inputFarTemp = Console.ReadLine();
+
+            ///Convert the string to a number. Use the double datatype to allow decimal numbers.
+            decimal farTempInput;
+
+            //Check to see if the user left the iput blank.
+            while (string.IsNullOrWhiteSpace(inputFarTemp))
+            {
+                //Tell the user to not leave blank and to enter a number.
+                Console.WriteLine("Please do not leave blank.\r\n");
+
+                //Allow the user to type their response.
+                inputFarTemp = Console.ReadLine();
+            }
+
+            //Check to see if the user entered anything other than a number.
+            while (!decimal.TryParse(inputFarTemp, out farTempInput))
+            {
+                //Tell the user to type enter a number.
+                Console.WriteLine("\r\nYou have typed something other than a number.\r\nPlease type a number then press enter.");
+
+                //Allow the user to type their response.
+                inputFarTemp = Console.ReadLine();
+            }
+
+            //Prompt the user to type in a temperature in decimal numbers only.
+            Console.WriteLine("\r\nEnter a temperature in Celsius using only numbers and decimals.\r\nThen press enter.");
+
+            //Allow the user to type the temperature.
+            string inputTempCel = Console.ReadLine();
+
+            ///Convert the string to a number. Use the double datatype to allow decimal numbers.
+            decimal tempCelInput;
+
+            //Check to see if the user left the iput blank.
+            while (string.IsNullOrWhiteSpace(inputTempCel))
+            {
+                //Tell the user to not leave blank and to enter a number.
+                Console.WriteLine("Please do not leave blank.\r\n");
+
+                //Allow the user to type their response.
+                inputTempCel = Console.ReadLine();
+            }
+
+            //Check to see if the user entered anything other than a number.
+            while (!decimal.TryParse(inputTempCel, out tempCelInput))
+            {
+                //Tell the user to type enter a number.
+                Console.WriteLine("\r\nYou have typed something other than a number.\r\nPlease type a number then press enter.");
+
+                //Allow the user to type their response.
+                inputTempCel = Console.ReadLine();
+            }
+
+            //Convert from Fahrenheit to Celsius. 
+            decimal fahrenConvert = (farTempInput - 32) * 5 / 9;
+
+            //Convert from Celsius to Fahrenheit.
+            decimal celsConvert = (tempCelInput * 9 / 5) + 32;
+
+            //Display the results.
+            Console.WriteLine("\r\nThe temperature you entered in Fahrenheit was converted into\r\n " + fahrenConvert + " degrees Celsius.\r\nThe temperature you entered in Celsius was converted into\r\n " + celsConvert + " degrees Fahrenhiet.");
         }
     }
 }
