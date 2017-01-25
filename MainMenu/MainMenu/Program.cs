@@ -10,12 +10,6 @@ namespace MainMenu
     {
         static void Main(string[] args)
         {
-            //Create String variables.
-            string SwapNameString = "SwapName";
-            string BackwardsString = "Backwards";
-            string AgeConvertString = "AgeConvert";
-            string TempConvertString = "TempConvert";
-
             //Display the menu and prompt the user to enter the menu item they want to use.
             Console.WriteLine("Typing the number of the of the menu item you want and pressing enter.\r\n1. SwapName  2. Backwards  3. AgeConvert  4. TempConvert\r\n");
 
@@ -394,7 +388,7 @@ namespace MainMenu
             decimal celsConvert = (tempCelInput * 9 / 5) + 32;
 
             //Display the results.
-            Console.WriteLine("\r\nThe temperature you entered in Fahrenheit was converted into\r\n " + fahrenConvert + " degrees Celsius.\r\nThe temperature you entered in Celsius was converted into\r\n " + celsConvert + " degrees Fahrenhiet.");
+            Console.WriteLine("\r\nYou entered {0} degrees Fahrenheit, which converts into\r\n {1} degrees Celsius,\r\nand your temperature, {2} degrees Celsius, converts into\r\n {3} degrees Fahrenhiet.", farTempInput, fahrenConvert, tempCelInput, celsConvert);
         }
     }
 }
