@@ -119,7 +119,7 @@ namespace MainMenu
                 //Tell the user to not leave blank and to enter a number.
                 Console.WriteLine("\r\nPlease do not leave blank.\r\n");
 
-                //Allow the user to type their response.
+                //Allow the user to re-enter their response.
                 validateInput = Console.ReadLine();
             }
 
@@ -139,7 +139,7 @@ namespace MainMenu
                 //Tell the user to not leave blank and to enter a number.
                 Console.WriteLine("\r\nDo not leave blank.\r\nPlease type a number then press enter.\r\n");
 
-                //Allow the user to type their response.
+                //Allow the user to re-enter their response.
                 validateInput = Console.ReadLine();
             }
 
@@ -149,7 +149,7 @@ namespace MainMenu
                 //Tell the user to type enter a number.
                 Console.WriteLine("\r\nYou have typed something other than a number.\r\nPlease type a number then press enter.\r\n");
 
-                //Allow the user to type their response.
+                //Allow the user to re-enter their response.
                 validateInput = Console.ReadLine();
             }
 
@@ -187,7 +187,16 @@ namespace MainMenu
         public static void Backwards()
         {
             //Assign the variable to a string literal.
-            string sentence = "";
+            string sentence = null;
+
+            //Create char variable to a blank space in string.
+            char space = ' ';
+            
+            //Create int variable.
+            int count;
+
+            //Assign 0 to count variable.
+            count = 0;
 
             //Assign the variable to a string literal.
             string revSentence = "";
@@ -201,18 +210,29 @@ namespace MainMenu
                 //Inform user to not leave the input blank.
                 Console.WriteLine("\r\nPlease do not leave blank.\r\n");
 
-                //Allow the user to type their response.
+                //Allow the user to re-enter their response.
                 sentence = Console.ReadLine();
             }
 
-            //Create while loop to check if there are more than six words in the sentence.
-            while (sentence.IndexOf(" ") >= 6)
+            //Create for loop to count the number of spaces in the user's sentence.
+            for (int i = 0; i < sentence.Length; i++)
             {
-                //inform the user that they typed more than 6 words.
-                Console.WriteLine("\r\nYou must have 6 words in your sentence.\r\n");
+                //Create if statement to check if any of the indexes in the string is a blank space.
+                if (sentence[i].Equals(space))
+                {
+                    //Increment the number of spaces in the string.
+                    count++;
+                }
 
-                //Allow the user to type their response.
-                sentence = Console.ReadLine();
+                //Create if statement to check if there are more than six words in the sentence.
+                if (count >= 6)
+                {
+                    //inform the user that they typed more than 6 words.
+                    Console.WriteLine("\r\nYou can't have more than 6 words in your sentence.\r\n");
+
+                    //Allow the user to re-enter their response.
+                    sentence = Console.ReadLine();
+                }
             }
 
             //Create a for loop to reverse user input.
@@ -230,21 +250,12 @@ namespace MainMenu
         public static decimal AgeConvert(string name, decimal age)
         {
 			//Create variables to hold the values of the year, day, hour, minute, second and leap year.
-            decimal numDays;
-            decimal numHours;
-            decimal numMinutes;
-            decimal numSeconds;
-			decimal yearBorn;
-			DateTime currentYear = DateTime.Now;
-			decimal numLeapYear;
-			decimal newNumLeap;
-			decimal numDaysLeap;
-			decimal numHoursLeap;
-			decimal numMinutesLeap;
-			decimal numSecondsLeap;
+            decimal numDays, numHours, numMinutes, numSeconds, yearBorn,
+                numLeapYear, newNumLeap, numDaysLeap, numHoursLeap, numMinutesLeap, numSecondsLeap;
+            DateTime currentYear = DateTime.Now;
 
-			//Calculate the year the user was born.
-			yearBorn = currentYear.Year - age;
+            //Calculate the year the user was born.
+            yearBorn = currentYear.Year - age;
 
 			//Calculate the number of days the users has lived.
 			numDays = age * 365;
@@ -261,8 +272,9 @@ namespace MainMenu
 			//Calculate the number of leap years the users has lived.
 			numLeapYear = (age + 1) / 4;
 
-			//Round up the number of leap years.
-			newNumLeap = Math.Ceiling(numLeapYear);
+            /*Round up the number of leap years. Pass 0 for the second argument to remove decimals, and pass MidpointRounding.AwayFromZero object method
+             in the third arguement to round the digit in the ones place to the nearest whole number.*/
+            newNumLeap = Math.Round(numLeapYear, 0, MidpointRounding.AwayFromZero);
 
 			//Calculate the number of days the users has lived including leap year.
 			numDaysLeap = numDays + newNumLeap;
@@ -311,10 +323,13 @@ namespace MainMenu
 			}
 
 			//Display the users name, the year born, age, days lived, hours lived, minutes lived and seconds lived.
-			Console.WriteLine("\r\n{0}, you were born {1}{2}and you have lived {3} {4}, \r\n{5} days, {6} hours, {7} minutes and {8} seconds.", name, yearBorn, numLeapString, age, addS, numDays, numHours, numMinutes, numSeconds);
+			Console.WriteLine("\r\n{0}, you were born {1}{2}and you have lived {3} {4}, \r\n{5} days, {6} hours, {7} minutes and {8} seconds.",
+                name, yearBorn, numLeapString, age, addS, numDays, numHours, numMinutes, numSeconds);
 
-			//Display the number of leap years the user has lived and display the new amount of days lived, hours lived, minutes lived and seconds lived.
-			Console.WriteLine("\r\nIncluding {0} leap {1}, you've lived {2} days, {3} hours,\r\n{4} minutes and {5} seconds.\r\n", newNumLeap, addS, numDaysLeap, numHoursLeap, numMinutesLeap, numSecondsLeap);
+            /*Display the number of leap years the user has lived and display the new amount 
+            of days lived, hours lived, minutes lived and seconds lived.*/
+			Console.WriteLine("\r\nIncluding {0} leap {1}, you've lived {2} days, {3} hours,\r\n{4} minutes and {5} seconds.\r\n", 
+                newNumLeap, addS, numDaysLeap, numHoursLeap, numMinutesLeap, numSecondsLeap);
 			
 			//Return the age parameter.
 			return age;
@@ -324,7 +339,7 @@ namespace MainMenu
         public static void TempConvert()
         {
             //Prompt the user to type in a temperature in decimal numbers only.
-            Console.WriteLine("\r\nEnter a temperature in Fahrenheit using only numbers and decimals.\r\nThen press enter.");
+            Console.WriteLine("\r\nEnter a temperature in Fahrenheit using only numbers and decimals,\r\nthen press enter.");
 
             //Allow the user to type the temperature.
             string inputFarTemp = Console.ReadLine();
@@ -338,7 +353,7 @@ namespace MainMenu
                 //Tell the user to not leave blank and to enter a number.
                 Console.WriteLine("Please do not leave blank.\r\n");
 
-                //Allow the user to type their response.
+                //Allow the user to re-enter their response.
                 inputFarTemp = Console.ReadLine();
             }
 
@@ -348,12 +363,12 @@ namespace MainMenu
                 //Tell the user to type enter a number.
                 Console.WriteLine("\r\nYou have typed something other than a number.\r\nPlease type a number then press enter.");
 
-                //Allow the user to type their response.
+                //Allow the user to re-enter their response.
                 inputFarTemp = Console.ReadLine();
             }
 
             //Prompt the user to type in a temperature in decimal numbers only.
-            Console.WriteLine("\r\nEnter a temperature in Celsius using only numbers and decimals.\r\nThen press enter.");
+            Console.WriteLine("\r\nEnter a temperature in Celsius using only numbers and decimals,\r\nthen press enter.");
 
             //Allow the user to type the temperature.
             string inputTempCel = Console.ReadLine();
@@ -367,7 +382,7 @@ namespace MainMenu
                 //Tell the user to not leave blank and to enter a number.
                 Console.WriteLine("Please do not leave blank.\r\n");
 
-                //Allow the user to type their response.
+                //Allow the user to re-enter their response.
                 inputTempCel = Console.ReadLine();
             }
 
@@ -377,7 +392,7 @@ namespace MainMenu
                 //Tell the user to type enter a number.
                 Console.WriteLine("\r\nYou have typed something other than a number.\r\nPlease type a number then press enter.");
 
-                //Allow the user to type their response.
+                //Allow the user to re-enter their response.
                 inputTempCel = Console.ReadLine();
             }
 
@@ -388,7 +403,8 @@ namespace MainMenu
             decimal celsConvert = (tempCelInput * 9 / 5) + 32;
 
             //Display the results.
-            Console.WriteLine("\r\nYou entered {0} degrees Fahrenheit, which converts into\r\n {1} degrees Celsius,\r\nand your temperature, {2} degrees Celsius, converts into\r\n {3} degrees Fahrenhiet.", farTempInput, fahrenConvert, tempCelInput, celsConvert);
+            Console.WriteLine("\r\nYou entered {0} degrees Fahrenheit, which converts into\r\n {1} degrees Celsius,\r\nand your temperature, " +
+                "{2} degrees Celsius, converts into\r\n {3} degrees Fahrenhiet.", farTempInput, fahrenConvert, tempCelInput, celsConvert);
         }
     }
 }
