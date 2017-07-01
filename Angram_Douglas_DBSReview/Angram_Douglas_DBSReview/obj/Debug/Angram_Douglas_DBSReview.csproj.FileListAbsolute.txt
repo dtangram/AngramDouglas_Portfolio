@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\Angram_Douglas_DBSReview\Angram_Douglas_DBSReview\bin\Debug\Angram_Douglas_DBSReview.exe.config
+\\vmware-host\Shared Folders\Desktop\Angram_Douglas_DBSReview\Angram_Douglas_DBSReview\bin\Debug\Angram_Douglas_DBSReview.exe
+\\vmware-host\Shared Folders\Desktop\Angram_Douglas_DBSReview\Angram_Douglas_DBSReview\bin\Debug\Angram_Douglas_DBSReview.pdb
+\\vmware-host\Shared Folders\Desktop\Angram_Douglas_DBSReview\Angram_Douglas_DBSReview\bin\Debug\MySql.Data.dll
+\\vmware-host\Shared Folders\Desktop\Angram_Douglas_DBSReview\Angram_Douglas_DBSReview\obj\Debug\Angram_Douglas_DBSReview.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Angram_Douglas_DBSReview\Angram_Douglas_DBSReview\obj\Debug\Angram_Douglas_DBSReview.exe
+\\vmware-host\Shared Folders\Desktop\Angram_Douglas_DBSReview\Angram_Douglas_DBSReview\obj\Debug\Angram_Douglas_DBSReview.pdb
