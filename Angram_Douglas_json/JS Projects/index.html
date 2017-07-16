@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<!--TIRE PRESSURE-->
+	<div id="wrapper1" class="wrapper">
+    	<h1>What's your tire pressure?</h1>
+      
+      	<div id="form-messages1" class="messages"></div>
+      
+        <form>
+            <div class="field">
+                <label for="FLTire">Please enter the tire pressure for the front left tire.</label><br />
+                <input type="text" id="FLTire" name="FLTire" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+            </div>
+        
+            <div class="field">
+                <label for="FRTire">Please enter the tire pressure for the front right tire.</label><br />
+                <input type="text" id="FRTire" name="FRTire" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+            </div>
+        
+            <div class="field">
+                <label for="RLTire">Please enter the tire pressure for the rear left tire.</label><br />
+                <input type="text" id="RLTire" name="RLTire" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+            </div>
+            
+            <div class="field">
+                <label for="RRTire">Please enter the tire pressure for the rear right tire.</label><br />
+                <input type="text" id="RRTire" name="RRTire" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+            </div>
+        
+            <div class="field">
+                <input id="submitPressure" class="submit" type="button" value="Submit" onClick="tireSpec()">
+            </div>
+        </form>
+    </div>
+    
+    
+    <!--CHARGE IT!!-->
+    <div id="wrapper2" class="wrapper">
+    	<h1>Charge It!</h1>
+      
+      	<div id="form-messages2" class="messages"></div>
+      
+        <form>
+            <div class="field">
+            	<label for="newInputMax"></label><br />                
+                <input type="text" id="newInputMax" name="newInputMax" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+            </div>
+        
+            <div class="field">
+                <label for="purchase">Please enter your purchase amount.</label><br />
+                <input type="text" id="purchase" name="purchase" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+            </div>
+            
+            <div class="field">
+                <input id="submitCharge" class="submit" type="button" value="Submit" onClick="charge()">
+            </div>
+        </form>
+    </div>
+    
+    
+    <!--MOVIE TICKET PRICE-->
+    <div id="wrapper3" class="wrapper">
+    	<h1>Movie Ticket Price</h1>
+      
+      	<div id="form-messages3" class="messages"></div>
+      
+        <form>
+            <div class="field">
+                <label for="newAge">Please type your age.</label><br />
+                <input type="text" id="newAge" name="newAge" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+            </div>
+        
+            <div class="field">
+                <label for="newTime">Please type the time you want to see the movie.</label><br />
+                <input type="text" id="newTime" name="newTime" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+            </div>
+            
+            <div class="field">
+                <input id="submitTicket" class="submit" type="button" value="Submit" onClick="ticketPrice()">
+            </div>
+        </form>
+    </div>
+    
+    
+    <!--TEMPERATURE CONVERTER-->
+    <div id="wrapper4" class="wrapper">
+    	<h1>Temperature Converter</h1>
+      
+      	<div id="form-messages4" class="messages"></div>
+      
+        <form>
+        	<div class="field">
+                <label for="temp">Type a temperature.</label><br />
+                <input type="text" id="temp" name="temp" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+            </div>
+        
+            <div class="field">
+                <label for="fc">Type "C" for Celsius, or type "F" for Fahrenheit then click submit.</label><br />
+                <input type="text" id="fc" name="fc">
+            </div>
+            
+            <div class="field">
+                <label for="cel">If your temperature is in Fahrenheit, type "C" to view it in Celsius then click submit.</label><br />
+                <input type="text" id="cel" name="cel">
+            </div>
+            
+            <div class="field">
+                <label for="fahr">If your temperature is in Celsius, type "F" to view it in Fahrenheit then click submit.</label><br />
+                <input type="text" id="fahr" name="fahr">
+            </div>
+            
+            <div class="field">
+                <input id="submitTemp" class="submit" type="button" value="Submit" onClick="tempConvert()">
+            </div>
+        </form>
+    </div>
+    
+    
+    <!--LETTER GRADE CALCULATOR-->
+    <div id="wrapper5" class="wrapper">
+    	<h1>Grade Calculator</h1>
+      
+      	<div id="form-messages5" class="messages"></div>
+      
+        <form>
+        	<div class="field">
+                <label for="gradeInput">Plese type your number grade.</label><br />
+                <input type="text" id="gradeInput" name="gradeInput" onkeypress="return event.charCode === 0 || /\d/.test(String.fromCharCode(event.charCode));">
+            </div>
+            
+            <div class="field">
+                <input id="submitGrade" class="submit" type="button" value="Submit" onClick="gradeCalc()">
+            </div>
+        </form>
+    </div>
+    
+    
+    <!--REVERSE IT-->
+    <div id="wrapper6" class="wrapper">
+    	<h1>Reverse It</h1>
+      
+      	<!--<div id="form-messages6" class="messages"></div><br />
+        <div id="form-messages7" class="messages"></div>-->
+      
+        <form>
+        	<div class="field">
+                <label for="item1">Enter your first item.</label><br />
+                <input type="text" id="item1" name="item1">
+            </div>
+        
+            <div class="field">
+                <label for="item2">Enter your second item.</label><br />
+                <input type="text" id="item2" name="item2">
+            </div>
+            
+            <div class="field">
+                <label for="item3">Enter your third item.</label><br />
+                <input type="text" id="item3" name="item3">
+            </div>
+            
+            <div class="field">
+                <label for="item4">Enter your fourth item.</label><br />
+                <input type="text" id="item4" name="item4">
+            </div>
+            
+            <div class="field">
+                <label for="item5">Enter your fifth item.</label><br />
+                <input type="text" id="item5" name="item5">
+            </div>
+            
+            <div class="field">
+                <input id="submitReverse" class="submit" type="button" value="Submit" onClick="reverseIt()">
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/cjs.js"></script>
+</body>
+</html>

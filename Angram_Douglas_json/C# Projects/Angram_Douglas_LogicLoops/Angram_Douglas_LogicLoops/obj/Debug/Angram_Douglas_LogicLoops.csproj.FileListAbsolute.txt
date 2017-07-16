@@ -1,0 +1,12 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\bin\Debug\Angram_Douglas_LogicLoops.exe.config
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\bin\Debug\Angram_Douglas_LogicLoops.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\bin\Debug\Angram_Douglas_LogicLoops.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\obj\Debug\Angram_Douglas_LogicLoops.csprojResolveAssemblyReference.cache
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\obj\Debug\Angram_Douglas_LogicLoops.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\obj\Debug\Angram_Douglas_LogicLoops.pdb
+C:\Users\DThor\Desktop\Full Sail University\04. Scalable Data Infrastructures\Scalable Data Infrastructures\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\bin\Debug\Angram_Douglas_LogicLoops.exe.config
+C:\Users\DThor\Desktop\Full Sail University\04. Scalable Data Infrastructures\Scalable Data Infrastructures\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\bin\Debug\Angram_Douglas_LogicLoops.exe
+C:\Users\DThor\Desktop\Full Sail University\04. Scalable Data Infrastructures\Scalable Data Infrastructures\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\bin\Debug\Angram_Douglas_LogicLoops.pdb
+C:\Users\DThor\Desktop\Full Sail University\04. Scalable Data Infrastructures\Scalable Data Infrastructures\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\obj\Debug\Angram_Douglas_LogicLoops.csprojResolveAssemblyReference.cache
+C:\Users\DThor\Desktop\Full Sail University\04. Scalable Data Infrastructures\Scalable Data Infrastructures\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\obj\Debug\Angram_Douglas_LogicLoops.exe
+C:\Users\DThor\Desktop\Full Sail University\04. Scalable Data Infrastructures\Scalable Data Infrastructures\Angram_Douglas_LogicLoops\Angram_Douglas_LogicLoops\obj\Debug\Angram_Douglas_LogicLoops.pdb

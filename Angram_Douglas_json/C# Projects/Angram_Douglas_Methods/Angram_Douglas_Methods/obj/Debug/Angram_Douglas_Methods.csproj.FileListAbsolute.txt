@@ -1,0 +1,6 @@
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Methods\Angram_Douglas_Methods\bin\Debug\Angram_Douglas_Methods.exe.config
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Methods\Angram_Douglas_Methods\bin\Debug\Angram_Douglas_Methods.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Methods\Angram_Douglas_Methods\bin\Debug\Angram_Douglas_Methods.pdb
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Methods\Angram_Douglas_Methods\obj\Debug\Angram_Douglas_Methods.csprojResolveAssemblyReference.cache
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Methods\Angram_Douglas_Methods\obj\Debug\Angram_Douglas_Methods.exe
+\\vmware-host\shared folders\documents\visual studio 2015\Projects\Angram_Douglas_Methods\Angram_Douglas_Methods\obj\Debug\Angram_Douglas_Methods.pdb
