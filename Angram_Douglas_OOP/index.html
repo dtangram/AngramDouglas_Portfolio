@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+<script type="text/babel">
+	(function(){
+		class Cars{
+			constructor(color, make, model){
+				if (new.target === Cars) {
+				  throw new Error("Cars is an Abstract class. You cannot instantiate this class.");
+				}
+				
+				this._color = color;
+				this._make = make;
+				this._model = model;
+			}
+			
+			myCar(){
+				console.log("The " + this._color + " " + this._make + " " + this._model +  " is my first car.");
+			}
+		}
+		
+		class FirstCar extends Cars{}
+		
+		let firstCar = new FirstCar("gold", "Plymouth", "Reliant");
+		
+		firstCar.myCar();
+		
+		class SecondCar extends Cars{
+			constructor(color, make, model, year){
+				super(color, make, model);
+				this._year = year;
+			}
+			
+			myCarYear(){
+				console.log("The " + this._color + " " + this._year + " " + this._make + " " + this._model +  " is my second car.");
+			}
+		}
+		
+		let secondCar = new SecondCar("red", "Acura", "TSX", "2006");
+		
+		secondCar.myCarYear();
+	})();
+	
+	/*For abstraction, I used a conditional statement in the constructor of the parent class to throw an error message if someone tries to instantiate the parent class. I used Inheritance by extending the Cars class to the FirstCar and SecondCar classes. I made use of Polymorphism by changing the arguments in the firstCar and secondCar constructors to print different results. For Encapsulation, I wrapped the code in an immediately-invoked function expression (iife).*/
+</script>
+
+<title>Untitled Document</title>
+</head>
+
+<body>
+</body>
+</html>
