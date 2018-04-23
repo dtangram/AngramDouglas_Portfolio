@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Resurrectus</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <div id="audio-image">
+        		<img class="cover" />
+        	</div>
+        </div>
+      </div>
+
+      <div class="grid-x grid-margin-x">
+        <div class="large-12 cell">
+          <div class="callout">
+            <div id="audio-player">
+          		<div id="audio-info">
+          			<span class="title"></span>
+          		</div>
+          		 <input id="volume" type="range" min="0" max="10" value="5" />
+          		 <br>
+          		 <div id="buttons" class="grid-x">
+                 <button id="prev" class="large-3 small-3 cell"><img src="img/prevBTN.png"></button>
+                 <button id="play" class="large-3 small-3 cell"><img src="img/playBTN.png"></button>
+                 <button id="pause" class="large-3 small-3 cell"><img src="img/pauseBTN.png"></button>
+                 <button id="next" class="large-3 small-3 cell"><img src="img/nextBTN.png"></button>
+          		 </div>
+          		 <div class="clearfix"></div>
+          		 <div id="tracker">
+          			<div id="progressBar">
+          				<span id="progress"></span>
+          			</div>
+          			<span id="duration"></span>
+          		 </div>
+          		 <div class="clearfix"></div>
+          		 <ul id="playlist" class="hidden">
+          			<li song="01. Peter Piper - Run-D.M.C.mp3" cover="Run-DMC - Raising Hell.jpg" artist="Run-D.M.C">01. Peter Piper - Run-D.M.C</li>
+          			<li song="02. Slow Ride - Beastie Boys.mp3" cover="Beastie Boys -Licensed To Ill.jpg" artist="Beastie Boys">02. Slow Ride - Beastie Boys</li>
+          			<li song="03. Eric B for President - Eric B & Rakim.mp3" cover="Eric B & Rakim.jpg" artist="Eric B & Rakim">03. Eric B for President - Eric B & Rakim</li>
+          			<li song="04. Coast to Coast - Word of Mouth.mp3" cover="Word of Mouth.jpg" artist="Word of Mouth">04. Coast to Coast - Word of Mouth</li>
+          			<li song="05. Drag Rap - The Showboys.mp3" cover="Showboys - Drag Rap.jpg" artist="The Showboys">05. Drag Rap - The Showboys</li>
+          			<li song="06. Gotta Be Tough - MC Shy-D.mp3" cover="MC Shy-D - Gotta Be Tough.jpg" artist="MC Shy-D">06. Gotta Be Tough - MC Shy-D</li>
+          			<li song="07. Hold It Now, Hit It - Beastie Boys.mp3" cover="Beastie Boys -Licensed To Ill.jpg" artist="Beastie Boys">07. Hold It Now, Hit It - Beastie Boys</li>
+          			<li song="08. My Adidas - Run-D.M.C.mp3" cover="Run-DMC - Raising Hell.jpg" artist="Run-D.M.C.">08. My Adidas - Run-D.M.C.</li>
+          			<li song="09. Just Buggin' - Whistle.mp3" cover="Whistle.jpg" artist="Whistle">09. Just Buggin' - Whistle</li>
+          			<li song="10. Gucci Bass - Gucci Crew II.mp3" cover="Gucci Bass -Gucci Crew-II.jpg" artist="Gucci Crew II">10. Gucci Bass - Gucci Crew II</li>
+          			<li song="11. Triple M Bass - Worse' Em.mp3" cover="Worse 'Em.jpg" artist="Worse' Em">11. Triple M Bass - Worse' Em</li>
+          			<li song="12. Girls Ain't Nothing But Trouble - DJ Jazzy Jeff & The Fresh Prince.mp3" cover="DJ Jazzy Jeff & The Fresh Prince.jpg" artist="DJ Jazzy Jeff & The Fresh Prince">12. Girls Ain't Nothing But Trouble - DJ Jazzy Jeff & The Fresh Prince</li>
+          			<li song="13. Pee Wee's Dance - Joeski Love.mp3" cover="Joeski Love.jpg" artist="Joeski Love">13. Pee Wee's Dance - Joeski Love</li>
+          			<li song="14. Can You Feel It - Original Concept.mp3" cover="Original Concept.jpg" artist="Original Concept">14. Can You Feel It - Original Concept</li>
+          			<li song="15. He Cuts So Fresh - Marly Marl.mp3" cover="Uptown.jpg" artist="Marly Marl">15. He Cuts So Fresh - Marly Marl</li>
+          			<li song="16. Bang Zoom - The Real Roxanne.mp3" cover="The Real Roxanne.jpg" artist="The Real Roxanne">16. Bang Zoom - The Real Roxanne</li>
+          		</ul>
+          	</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
