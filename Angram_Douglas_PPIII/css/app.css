@@ -14,22 +14,24 @@ body{
 	clear: both;
 }
 
-#container{
-	width:330px;
-	min-height:400px;
-	background:#333;
+.grid-container{
+	width: 330px;
+	background: #CCC;
 	overflow:auto;
-	margin:60px auto;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
+  min-height: 400px;
+	margin: 60px auto;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 	border:#666 solid 2px;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  position: relative;
 }
 
 #audio-image{
 	position:relative;
 	overflow:hidden;
-	height: 600px;
 	margin-bottom: 1%;
   text-align: center;
 }
@@ -81,9 +83,19 @@ body{
 	border-radius:5px;
 }
 
+.controls{
+  background: #FFF;
+  min-width: 100%;
+  min-height: 20%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 5%;
+}
+
 #buttons{
 	display: block;
-	overflow: auto;
   padding-left: 25%;
 }
 
