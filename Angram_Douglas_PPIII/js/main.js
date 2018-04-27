@@ -98,9 +98,13 @@ $('#playlist li').click(function (){
 	showDuration();
 });
 
-$('#volume').change(function(){
-	audio.volume = parseFloat(this.value / 10);
-});
+var decreaseVol = function(){
+	audio.volume -= 0.20;
+}
+
+var increaseVol = function(){
+	audio.volume += 0.20;
+}
 
 function showDuration(){
 	$(audio).bind('timeupdate', function(){

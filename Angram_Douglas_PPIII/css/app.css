@@ -84,16 +84,23 @@ body{
 #buttons{
 	display: block;
 	overflow: auto;
-
+  padding-left: 25%;
 }
 
 button{
   cursor: pointer;
-
 }
 
-#play img, #pause img, #prev img, #next img{
-  width: 8%;
+#decrease{
+  width: 5%;
+}
+
+#prev img, #next img{
+  width: 30%;
+}
+
+#play img, #pause img{
+  width: 40%;
 }
 
 /*#prev{
@@ -130,10 +137,8 @@ width:10%;
 	background: #CCC;
 }
 
-#volume{
+#increase{
+  width: 11%;
   float: right;
-}
-
-#decrease, #increase{
-  width: 6%;
+  margin-right: 30%;
 }
