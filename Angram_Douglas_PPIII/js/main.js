@@ -1,5 +1,14 @@
 var audio;
 
+// $.ajax({
+// 	type: "GET",
+// 	url: "http://explosivedesigns.net/Angram_Douglas_PPIII/js/songs.json",
+// 	dataType: "json",
+// 	success: function(data){
+// 		console.log(data);
+// 	}
+// });
+
 $('#pause').hide();
 
 initAudio($('#playlist li:first-child'));

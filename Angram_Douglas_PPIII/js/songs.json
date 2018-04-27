@@ -1,0 +1,114 @@
+{
+  "track1" : [{
+    "title": "01. Peter Piper - Run-D.M.C.",
+    "artist": "Run-D.M.C.",
+    "album": "Raising Hell",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Run-DMC%20-%20Raising%20Hell.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/01.%20Peter%20Piper%20-%20Run-D.M.C.mp3"
+  }],
+  "track2" : [{
+    "title": "02. Slow Ride - Beastie Boys",
+    "artist": "Beastie Boys",
+    "album": "Licensed To Ill",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Beastie%20Boys%20-Licensed%20To%20Ill.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/02.%20Slow%20Ride%20-%20Beastie%20Boys.mp3"
+  }],
+  "track3" : [{
+    "title": "03. Eric B Is President - Eric B & Rakim",
+    "artist": "Eric B & Rakim",
+    "album": "Eric B Is President/My Melody (single)",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Eric%20B%20&%20Rakim.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/03.%20Eric%20B%20for%20President%20-%20Eric%20B%20&%20Rakim.mp3"
+  }],
+  "track4" : [{
+    "title": "04. Coast to Coast - Word of Mouth",
+    "artist": "Word of Mouth",
+    "album": "Coast to Coast (single)",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Word%20of%20Mouth.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/04.%20Coast%20to%20Coast%20-%20Word%20of%20Mouth.mp3"
+  }],
+  "track5" : [{
+    "title": "05. Drag Rap - The Showboys",
+    "artist": "The Showboys",
+    "album": "Drag Rap (single)",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Showboys%20-%20Drag%20Rap.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/05.%20Drag%20Rap%20-%20The%20Showboys.mp3"
+  }],
+  "track6" : [{
+    "title": "06. I've Gotta Be Tough - MC Shy-D",
+    "artist": "MC Shy-D",
+    "album": "I've Gotta Be Tough (single)",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/MC%20Shy-D%20-%20Gotta%20Be%20Tough.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/06.%20Gotta%20Be%20Tough%20-%20MC%20Shy-D.mp3"
+  }],
+  "track7" : [{
+    "title": "07. Hold It Now, Hit It - Beastie Boys",
+    "artist": "Beastie Boys",
+    "album": "Licensed To Ill",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Beastie%20Boys%20-Licensed%20To%20Ill.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/07.%20Hold%20It%20Now,%20Hit%20It%20-%20Beastie%20Boys.mp3"
+  }],
+  "track8" : [{
+    "title": "08. My Adidas - Run-D.M.C",
+    "artist": "Run-D.M.C",
+    "album": "Raising Hell",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Run-DMC%20-%20Raising%20Hell.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/08.%20My%20Adidas%20-%20Run-D.M.C.mp3"
+  }],
+  "track9" : [{
+    "title": "09. Just Buggin' - Whistle",
+    "artist": "Whistle",
+    "album": "Whistle",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Whistle.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/09.%20Just%20Buggin'%20-%20Whistle.mp3"
+  }],
+  "track10" : [{
+    "title": "10. Gucci Bass - Gucci Crew II",
+    "artist": "Gucci Crew II",
+    "album": "Gucci Bass (single)",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Gucci%20Bass%20-Gucci%20Crew-II.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/10.%20Gucci%20Bass%20-%20Gucci%20Crew%20II.mp3"
+  }],
+  "track11" : [{
+    "title": "11. Triple M Bass - Worse' Em",
+    "artist": "Worse' Em",
+    "album": "Triple M Bass (single)",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Worse%20'Em.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/11.%20Triple%20M%20Bass%20-%20Worse'%20Em.mp3"
+  }],
+  "track12" : [{
+    "title": "12. Girls Ain't Nothing But Trouble - DJ Jazzy Jeff & The Fresh Prince",
+    "artist": "DJ Jazzy Jeff & The Fresh Prince",
+    "album": "Girls Ain't Nothing But Trouble (single)",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/DJ%20Jazzy%20Jeff%20&%20The%20Fresh%20Prince.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/12.%20Girls%20Ain't%20Nothing%20But%20Trouble%20-%20DJ%20Jazzy%20Jeff%20&%20The%20Fresh%20Prince.mp3"
+  }],
+  "track13" : [{
+    "title": "13. Pee Wee's Dance - Joeski Love",
+    "artist": "Joeski Love",
+    "album": "Pee Wee's Dance (single)",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Joeski%20Love.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/13.%20Pee%20Wee's%20Dance%20-%20Joeski%20Love.mp3"
+  }],
+  "track14" : [{
+    "title": "14. Can You Feel It - Original Concept",
+    "artist": "Original Concept",
+    "album": "Can You Feel It/X-tra Beats (single)",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Original%20Concept.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/14.%20Can%20You%20Feel%20It%20-%20Original%20Concept.mp3"
+  }],
+  "track15" : [{
+    "title": "15. He Cuts So Fresh - Marly Marl",
+    "artist": "Marly Marl",
+    "album": "Uptown's Kickin' It",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/Uptown.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/15.%20He%20Cuts%20So%20Fresh%20-%20Marly%20Marl.mp3"
+  }],
+  "track16" : [{
+    "title": "16. Bang Zoom - The Real Roxanne",
+    "artist": "The Real Roxanne",
+    "album": "Bang Zoom/Howie's Teed Off (single)",
+    "cover": "http://explosivedesigns.net/1986-HipHop/img/The%20Real%20Roxanne.jpg",
+    "song" : "http://explosivedesigns.net/1986-HipHop/songs/16.%20Bang%20Zoom%20-%20The%20Real%20Roxanne.mp3"
+  }]
+}

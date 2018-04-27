@@ -52,66 +52,6 @@ body{
 	z-index:1;
 }
 
-input#volume{
-	width: 95%;
-	margin-left: 2%;
-    -webkit-appearance: none !important;
-    background :#CCC;
-    height: 1px;
-	margin-bottom:20px;
-}
-input#volume::-webkit-slider-thumb{
-    -webkit-appearance: none !important;
-    background: url(../img/volKnob.png) no-repeat;
-}
-
-#buttons{
-	display: block;
-	overflow: auto;
-  padding-left: 18%;
-}
-
-button{
-  cursor: pointer;
-}
-
-#play img, #pause img, #prev img, #next img{
-  width: 20%;
-}
-
-/*#prev{
-width:10%;
-	margin-top:15px;
-}
-
-#next{
-	width:10%;
-	margin-top:15px;
-} */
-
-#playlist{
-  list-style-type: none;
-  margin-left: 1.5% !important;
-}
-
-#playlist li{
-    cursor: pointer;
-    margin:5px;
-}
-
-#tracker{
-	position: relative;
-	width: 100%;
-  overflow: hidden;
-  margin-bottom: 5%;
-}
-
-#playlist li.active{
-    font-weight: bold;
-	padding: 3px;
-	background: #CCC;
-}
-
 #progressBar{
    width: 100%;
    margin-left:2%;
@@ -139,4 +79,61 @@ width:10%;
 	background: #000;
   color: #FFF;
 	border-radius:5px;
+}
+
+#buttons{
+	display: block;
+	overflow: auto;
+
+}
+
+button{
+  cursor: pointer;
+
+}
+
+#play img, #pause img, #prev img, #next img{
+  width: 8%;
+}
+
+/*#prev{
+width:10%;
+	margin-top:15px;
+}
+
+#next{
+	width:10%;
+	margin-top:15px;
+} */
+
+#playlist{
+  list-style-type: none;
+  margin-left: 1.5% !important;
+  display: none;
+}
+
+#playlist li{
+    cursor: pointer;
+    margin:5px;
+}
+
+#tracker{
+	position: relative;
+	width: 100%;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+
+#playlist li.active{
+    font-weight: bold;
+	padding: 3px;
+	background: #CCC;
+}
+
+#volume{
+  float: right;
+}
+
+#decrease, #increase{
+  width: 6%;
 }
